@@ -2,9 +2,9 @@ FROM openjdk:21
 
 RUN mkdir /coolBeans
 
-COPY .. /coolBeans
+COPY ./CoolApp /coolBeans
 
 WORKDIR /coolBeans
 
-CMD ls
+CMD java Main.java
 
